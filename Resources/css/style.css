@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
 
 /*** Header ****/
 
@@ -12,6 +26,10 @@ header {
   position: fixed;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
+  z-index: 10;
+  background-color: #fff;
+  margin-top: 0;
 }
 
 .logo {
@@ -36,4 +54,109 @@ nav ul li {
 nav ul li a {
   color: #000;
   text-decoration: underline;
+}
+
+/*** Main Content ****/
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  flex-direction: column;
+  display: flex;
+  margin-right: 30px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+/***** Large Column *****/
+
+.image-content {
+
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.image-content span {
+  position: relative;
+  left: 20px;
+}
+
+.stories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.story {
+  flex-direction: column;
+}
+
+.lead-story {
+  margin-bottom: 30px;
+}
+
+.lead-story .image-content {
+  background-image: url("../Images/img-story-main.png");
+}
+
+.earth.image-content {
+  background-image: url("../Images/img-story-2.png");
+}
+
+.research.image-content {
+  background-image: url("../Images/img-story-3.png");
+}
+
+.stories .text-content {
+    height: 250px;
+    margin-bottom: 45px;
+}
+
+.narrative {
+  margin-top: 16px;
+}
+
+.story {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat.image-content {
+  background-image: url("../Images/img-story-1.png");
+}
+
+.news-bites h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-bites .bite {
+  display: block;
+  color: DimGray;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
 }
