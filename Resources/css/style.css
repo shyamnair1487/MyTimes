@@ -1,0 +1,23 @@
+
+/*** Header ****/
+
+header {
+  font-size: 14px;
+  font-family: Verdana;
+  font-weight: bold;
+  display: flex;
+  color: mediumaquamarine;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  justify-content: space-between;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
