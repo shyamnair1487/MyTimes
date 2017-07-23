@@ -160,3 +160,19 @@ width: 300px;
   border-bottom: 1px solid black;
   padding: 11px 20px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #66CDAA;
+  height: 325px;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .info {
+  display: flex;
+  flex-direction: row;
+}
